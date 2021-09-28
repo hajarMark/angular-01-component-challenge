@@ -1,0 +1,12 @@
+<h1>user profile</h1>
+
+<h2>fiche de contact</h2>
+<span></span>
+<img [src]='user.photo'>
+<h3>Nom  : {{user.name}} </h3>
+<h3>Prénom  : {{user.firstName}}</h3>
+<input [(ngModel)]="user.quote" />
+<p>{{user.quote}}</p>
+<br>
+<button (click)="onClickButton()">afficher/masquer mon âge</button>
+<p [hidden]="hiddenAtt"> {{user.age}}</p>
